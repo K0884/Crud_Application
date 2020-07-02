@@ -1,0 +1,32 @@
+CRUD Application
+C => Create
+R => Read
+U => Update
+D => Delete
+
+We will follow the following steps to create a crud application in codeigniter framework.
+
+1). Download and Extract codeigniter fraemwork in htdocs folder.
+2). configure Codeigniter using config.php and database.php and autoload libraries like session, database, form_validation etc.
+3). Create a users table in database using phpmyadmin.
+4). CCreate a controller called user in controller folder.
+5). Create view called list, create, edit in view folder.
+6). Create a model called User model in models folder.
+
+=>ADD USER
+7). To show add user form, create a method called "create" in user controller.
+8). Load create view in "create method.
+9). Write a "create" method in user model to save a user in database.
+10). Apply validation and save form values in database and show success messages.
+
+=>List users
+11). create a method called "index" & load "list" view in user controller to show all users using User_model.
+12). Write a "All" method in user model for fetching all the user records.
+13). Write a loop to list all users in "list" view, also create a edit and delete button with links.
+
+=>Edit user
+14). create a edit method in user controller to edit a user.
+15). write a "getuser" method in User model to fetch a single user row.
+16). Load edit user view to edit a user with prepopulate user data.
+17). Write a "updateUser" method in user model to update a user record.
+18). Apply validation & update form values in databse and show succcess notifications.
